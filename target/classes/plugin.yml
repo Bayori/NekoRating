@@ -1,0 +1,24 @@
+name: NekoRating
+version: '0.1'
+main: net.nekorise.nekorating.NekoRating
+api-version: '1.20'
+prefix: NekoRating
+authors: [Nekorise]
+description: Get a rating for game actions
+commands:
+  nekorating:
+    description: About command
+  profile:
+    aliases: [top, rating]
+    description: Opens a list of top players GUI
+    permission: nekorating.seeprofile
+  rpoints:
+    aliases: [rp, rpedit]
+    description: Manage player points
+    permission: nekorating.rpedit
+
+# All permissions:
+# nekorating.reload
+# nekorating.rpedit
+# nekorating.seeprofile
+# nekorating.enableget

@@ -1,0 +1,2 @@
+# NekoRating
+ Paper plugin

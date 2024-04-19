@@ -1,0 +1,30 @@
+language: "en" # Enter the name of the localization file. For example, use "de" if you want to use the file "de.yml"
+
+MySQL:
+  login: "root"
+  password: ""
+  server: "localhost"
+  port: "3306"
+  database-name: "nekorating"
+  table-name: "players"
+
+# Standard value of a player's points
+points:
+  start-points: 0
+
+players:
+  # Notifications for a player when /rpoints are used for them
+  notify-player-add-command: true
+  notify-player-take-command: true
+  notify-player-set-command: true
+  # Type of notification displayed when points are received
+  notify-player-reward: "ACTION_BAR" # CHAT_MESSAGE or TITLE or ACTION_BAR or DISABLE
+  # Play sound when earning points
+  # You can see the full list of sounds here - https://jd.papermc.io/paper/1.20/org/bukkit/Sound.html
+  notify-player-reward-sound:
+    enabled: true
+    sound: BLOCK_AMETHYST_BLOCK_STEP
+
+# Frequency of updating the top players
+tops:
+  refresh-top-global: 10

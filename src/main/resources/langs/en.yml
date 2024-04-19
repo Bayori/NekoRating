@@ -1,0 +1,57 @@
+configuration-reload: "&#e0aa1dConfigs and database connection reloaded"
+
+rpoints:
+  usage: "&#e04c1dUsage: &#e0b01d/rpoints <add/take/set> <Nickname> <Amount>"
+  error: "&#e04c1dCould not find such a player in the database"
+
+  add-sender: "&#e0aa1dThe player &#1de074{player} &#e0aa1dhas been added &#1de074{points} &#e0aa1dpoints"
+  add-player: "&#e0aa1dYou have been given &#1de074{points} &#e0aa1drating points"
+
+  take-sender: "&#e0aa1dThe player &#1de074{player} &#e0aa1dhas been taked &#1de074{points} &#e0aa1dpoints"
+  take-player: "&#e0aa1dYou had &#1de074{points} &#e0aa1drating points taken away from you"
+
+  set-sender: "&#e0aa1dThe player now has &#1de074{player} &#1de074{points} &#e0aa1dpoints"
+  set-player: "&#e0aa1dYou have been assigned &#1de074{points} &#e0aa1drating points"
+
+reward-messages:
+  ACTION_BAR: "&#e0aa1dYou've earned &#1de074{points} &#e0aa1dpoints"
+  CHAT_MESSAGE: "&#e0aa1dYou've earned &#1de074{points} &#e0aa1dpoints"
+  TITLE:
+    title: "&#e0aa1dYay!"
+    subtitle: "&#e0aa1dYou've earned &#1de074{points} &#e0aa1dpoints"
+
+# Values returned by placeholders if they are empty
+papi:
+  zero-value-top-username: "Empty" # %nrating_top_username_<Place>%
+  zero-value-top-points: "0" # %nrating_top_points_<Place>%
+  zero-value-player-top: "-1" # %nrating_player_top%
+
+#  You can see the full list of items (materials) here - https://jd.papermc.io/paper/1.20/org/bukkit/Material.html
+gui:
+  profile-menu:
+    name: "Rating system"
+
+    profile-item:
+      material: CONDUIT
+      name: "&#e0aa1dYour stats"
+      lore:
+        - " "
+        - "&#e0aa1d Name: &#1de074{player} "
+        - "&#e0aa1d Points: &#1de074{points} "
+        - "&#e0aa1d Top place: &#1de074{top_place} "
+        - " "
+
+    top-items:
+      name: "&#e0aa1d#{top_place} &#1de074{player}"
+      lore:
+        - " "
+        - "&#e0aa1d Points: &#1de074{points}  "
+        - " "
+    top-1-item:
+      material: NETHERITE_BLOCK
+    top-2-item:
+      material: DIAMOND_BLOCK
+    top-3-item:
+      material: GOLD_BLOCK
+    top-4-15-item:
+      material: COPPER_BLOCK

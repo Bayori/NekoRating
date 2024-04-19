@@ -1,0 +1,51 @@
+# The reward that will be given for a player killing a mob
+# You can set each mob a different reward.
+# Important. The enumeration must start with 0
+# The entire list of mobs is listed here - https://jd.papermc.io/paper/1.20/org/bukkit/entity/EntityType.html
+entities-kill:
+  0:
+    entity-type: ENDER_DRAGON
+    reward: 200
+  1:
+    entity-type: BEE
+    reward: 5
+  #3:
+  #  entity-type: ZOMBIE
+  #  reward: 3
+
+# A reward that will be given for a player killing a mob that is not on the list above
+other-entities-kill:
+  enable: true
+  reward: 1
+
+# Reward to be given for 1 transaction with a villager
+trades:
+  enable: true
+  reward: 5
+
+# Reward to be given for the pop of the totem
+totem-use:
+  enable: true
+  reward: 15
+
+# The reward that will be given out when a player has started a raid
+raid-trigger:
+  enable: true
+  reward: 15
+
+# A reward that will be given to ALL players who are winners of the raid
+raid-win:
+  enable: true
+  reward: 50
+
+# Reward to be given for using the enchantment table
+enchantment-item:
+  enable: true
+  lvl1-reward: 1
+  lvl2-reward: 2
+  lvl3-reward: 3
+
+# Reward to be given for obtaining achievements
+achievement:
+  enable: true
+  reward: 5

@@ -1,0 +1,56 @@
+configuration-reload: "&#e0aa1dКонфиги и подключение к бд перезагружены"
+
+rpoints:
+  usage: "&#e04c1dИспользование: &#e0b01d/rpoints <add/take/set> <Никнейм> <Кол-во>"
+  error: "&#e04c1dНе удалось найти такого игрока в базе данных"
+
+  add-sender: "&#e0aa1dИгроку &#1de074{player} &#e0aa1dбыло добавлено &#1de074{points} &#e0aa1dочков"
+  add-player: "&#e0aa1dВам было начислено &#1de074{points} &#e0aa1dочков рейтинга"
+
+  take-sender: "&#e0aa1dУ игрока &#1de074{player} &#e0aa1dбыло отобрано &#1de074{points} &#e0aa1dочков"
+  take-player: "&#e0aa1dУ Вас было отобрано &#1de074{points} &#e0aa1dочков рейтинга"
+
+  set-sender: "&#e0aa1dТеперь у игрока &#1de074{player} &#1de074{points} &#e0aa1dочков"
+  set-player: "&#e0aa1dВам установлено &#1de074{points} &#e0aa1dочков рейтинга"
+
+reward-messages:
+  ACTION_BAR: "&#e0aa1dВы заработали &#1de074{points} &#e0aa1dочков"
+  CHAT_MESSAGE: "&#e0aa1dВы заработали &#1de074{points} &#e0aa1dочков"
+  TITLE:
+    title: "&#e0aa1dУра!"
+    subtitle: "&#e0aa1dВы заработали &#1de074{points} &#e0aa1dочков"
+
+# Значения, возвращаемые плейсхолдерами, если они пусты
+papi:
+  zero-value-top-username: "Пусто" # %nrating_top_username_<Место>%
+  zero-value-top-points: "0" # %nrating_top_points_<Место>%
+  zero-value-player-top: "-1" # %nrating_player_top%
+
+gui:
+  profile-menu:
+    name: "Рейтинговая система"
+
+    profile-item:
+      material: CONDUIT
+      name: "&#e0aa1dТвоя статистика"
+      lore:
+        - " "
+        - "&#e0aa1d Ник: &#1de074{player} "
+        - "&#e0aa1d Очки: &#1de074{points} "
+        - "&#e0aa1d Место в топе: &#1de074{top_place} "
+        - " "
+
+    top-items:
+      name: "&#e0aa1d#{top_place} &#1de074{player}"
+      lore:
+        - " "
+        - "&#e0aa1d Очки: &#1de074{points}  "
+        - " "
+    top-1-item:
+      material: NETHERITE_BLOCK
+    top-2-item:
+      material: DIAMOND_BLOCK
+    top-3-item:
+      material: GOLD_BLOCK
+    top-4-15-item:
+      material: COPPER_BLOCK
